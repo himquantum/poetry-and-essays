@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poems • Poetry & Essays</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .poem-text { white-space: pre-wrap; line-height: 1.85; }
+        .stanza { margin-bottom: 2em; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+<nav class="border-b border-zinc-800 bg-black/80 backdrop-blur-md sticky top-0 z-50">
+  <div class="max-w-4xl mx-auto px-6 py-5 flex items-center justify-between">
+    <a href="index.html" class="serif text-3xl tracking-tight">Poetry & Essays</a>
+    <div class="flex gap-8 text-sm uppercase tracking-widest">
+      <a href="poems.html" class="text-amber-400">Poems</a>
+      <a href="essays.html" class="hover:text-amber-400 transition">Essays</a>
+      <a href="about.html" class="hover:text-amber-400 transition">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-4xl mx-auto px-6 py-12">
+  <div class="flex justify-between items-center mb-10">
+    <h1 class="text-5xl serif">Poems</h1>
+    <input id="searchInput" type="text" placeholder="Search by title..." class="bg-zinc-900 border border-zinc-700 focus:border-amber-400 rounded-full px-6 py-3 w-80 outline-none">
+  </div>
+
+  <div id="poemsContainer" class="space-y-16"></div>
+</div>
+
+<script>
+async function loadPoems() {
+  try {
+    const res = await fetch('https://api.github.com/repos/himquantum/poetry-and-essays/contents/poems?ref=main');
+    const files = await res.json();
+
+    const container = document.getElementById('poemsContainer');
+    container.innerHTML = '';
+
+    for (const file of files.filter(f => f.name.endsWith('.txt') || f.name.endsWith('.md'))) {
+      const title = file.name.replace(/\.(txt|md)$/, '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+      const textRes = await fetch(file.download_url);
+      let text = await textRes.text();
+
+      const stanzasHTML = text.split(/\n\n+/).map(stanza => 
+        `<div class="stanza">${stanza.trim().replace(/\n/g, '<br>')}</div>`
+      ).join('');
+
+      const cardHTML = `
+        <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10">
+          <h2 class="serif text-4xl mb-8 text-amber-100">${title}</h2>
+          <div class="poem-text text-lg leading-relaxed text-zinc-300">${stanzasHTML}</div>
+          <div class="mt-10 flex gap-4">
+            <button onclick="shareThis('${title}')" class="flex-1 py-4 bg-zinc-800 hover:bg-zinc-700 rounded-2xl flex items-center justify-center gap-2">
+              <i class="fa-solid fa-share-nodes"></i> Share
+            </button>
+            <a href="${file.download_url}" class="flex-1 py-4 bg-zinc-800 hover:bg-zinc-700 rounded-2xl flex items-center justify-center gap-2" download>
+              <i class="fa-solid fa-download"></i> Raw Text
+            </a>
+          </div>
+        </div>`;
+      container.innerHTML += cardHTML;
+    }
+  } catch(e) {
+    console.error(e);
+    document.getElementById('poemsContainer').innerHTML = '<p class="text-red-400">Error loading poems. Make sure GitHub Pages is enabled.</p>';
+  }
+}
+
+function shareThis(title) {
+  const url = window.location.href;
+  navigator.clipboard.writeText(`"${title}" — Read more at ${url}`);
+  alert('Link copied to clipboard!');
+}
+
+document.getElementById('searchInput').addEventListener('input', function() {
+  const term = this.value.toLowerCase();
+  document.querySelectorAll('.poem-card, div[style*="rounded-3xl"]').forEach(card => {
+    const h2 = card.querySelector('h2');
+    if (h2) card.style.display = h2.textContent.toLowerCase().includes(term) ? '' : 'none';
+  });
+});
+
+loadPoems();
+</script>
+</body>
+</html>
