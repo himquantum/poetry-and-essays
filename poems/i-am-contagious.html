@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I am contagious — HimQuantum</title>
+  <meta name="description" content="A poem about ideas and their power to transform." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .poem-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .poem-text {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: var(--text);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .poem-header {
+      margin-bottom: 3rem;
+    }
+    .poem-header h1 {
+      font-size: 2.5rem;
+      margin: 0 0 0.5rem 0;
+      font-weight: 600;
+    }
+    .poem-meta {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .featured-badge {
+      display: inline-block;
+      background: #e74c3c;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 3px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--accent-color, #e74c3c);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .back-link:hover {
+      border-bottom-color: currentColor;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="wordmark">Him<span>Quantum</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../essays.html">Essays</a></li>
+      <li><a href="../poems.html">Poems</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../index.html#newsletter">Subscribe</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="poem-container">
+    <a href="../poems.html" class="back-link">← Back to all poems</a>
+    
+    <div class="poem-header">
+      <div><span class="featured-badge">Featured Poem</span></div>
+      <h1>I am contagious</h1>
+      <div class="poem-meta">A poem by himquantum</div>
+    </div>
+
+    <div class="poem-text">I have slept in the skulls for decades 
+curled beneath centuries of silence.
+patient as stone, quiet as dead—
+waiting for one mind to catch my violence.
+
+I outlasted Galileo's dungeon walls.
+I survived the pyres, the shackles, the ban.
+I hid in the margins of banned manuscripts,
+then leapt like fire from man to man.
+
+I was the jingle Spartacus carried in chains.
+I was the formula Archimedes carved into tomb.
+I moved through Newton watching an apple fall,
+and made the whole architecture of heaven known.
+
+Tyrants have locked me behind stone-walls and firewalls
+burned the libraries where I made my bed,
+but I need only one throat left uncut,
+one speaker alive, and I am never dead.
+
+I am the Nile when its season arrives.
+No dam holds me long, I find the fault,
+One hairline crack in any wall,
+and I break free without a halt.
+
+I turned sand into silicon, 
+symbols into code.
+I threaded mathematics through a vacuum tube
+until a machine could think.
+
+I was the salt Gandhi lifted from the sea at Dandi,
+the four words King repeated till they crossed the line.
+the consent Locke said no king could take without asking,
+the clock Einstein broke and warped spacetime.
+
+No vaccine reaches me.
+No quarantine holds.
+I pass through handshakes, books, a stranger's eyes 
+I am the oldest plague the sapiens know
+the only one that makes the dead ones rise.
+
+You cannot uninvent me.
+You cannot choose to not have thought.
+Every child who asks WHY…
+carries me, uncaged and untaught.
+
+So when you feel me stir behind your eyes,
+when a sentence cracks your certainties in two;
+do not mistake this for coincidence.
+I have been looking for someone like you.
+
+I am the child of your curiosity,
+Spouse of your desire.
+I am contagious.
+I am immortal.
+I am Idea.</div>
+  </div>
+
+  <footer>
+    <span class="footer-word">Him<span>Quantum</span></span>
+    <ul class="footer-links">
+      <li><a href="../essays.html">Essays</a></li>
+      <li><a href="../poems.html">Poems</a></li>
+      <li><a href="../about.html">About</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 HimQuantum · himquantum.com · All writing is original unless attributed.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+
+</body>
+</html>

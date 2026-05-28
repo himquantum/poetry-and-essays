@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Shrine of emptiness — HimQuantum</title>
+  <meta name="description" content="A poem by himquantum" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .poem-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .poem-text {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: var(--text);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .poem-header {
+      margin-bottom: 3rem;
+    }
+    .poem-header h1 {
+      font-size: 2.5rem;
+      margin: 0 0 0.5rem 0;
+      font-weight: 600;
+    }
+    .poem-meta {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--accent-color, #e74c3c);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .back-link:hover {
+      border-bottom-color: currentColor;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="wordmark">Him<span>Quantum</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../essays.html">Essays</a></li>
+      <li><a href="../poems.html">Poems</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../index.html#newsletter">Subscribe</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="poem-container">
+    <a href="../poems.html" class="back-link">← Back to all poems</a>
+    
+    <div class="poem-header">
+      <h1>The Shrine of emptiness</h1>
+      <div class="poem-meta">A poem by himquantum</div>
+    </div>
+
+    <div class="poem-text">In the middle of my haste to arrive somewhere acceptable,
+I saw a glint in the dark street
+I bent down quickly, almost relieved.
+I lifted a crumpled wrapper, mistaking reflection for value,
+Mistaking borrowed light
+For a sacred halo.
+
+Perhaps 
+I was in a hurry to value something 
+Or perhaps I was afraid of walking alone at night.
+So I built a shrine out of that foil..
+Out of convenience
+And called it commitment.
+
+No sorrow ever truly belonged to me,
+No joy ever rose from my own depths.
+I became a container with a hole,
+Waiting to be filled.
+
+I deceived myself carefully, over years,
+Convincing myself I was wounded by love.
+What I called love
+Was a contract signed to quiet the noise,
+A drug taken to numb the hunger
+I refused to name.
+
+I walk the streets of an empty city
+Wearing a familiar face,
+Pass through tunnels built by meaningless rituals and endless expectations,
+
+Telling myself I was loyal to love.
+Only later did I find
+I had only been loyal to my own emptiness,
+Protecting it with ceremonies,
+Calling the cage a home.
+
+And yet
+The scent of that perfume still ignites my mind,
+Neurons flaring like distant, dying stars.
+Cigarette smoke pulls me back.
+To that porch under a moon that didn't ask for promises.
+Your skin, the cold air, the heat of the understanding 
+
+I wonder if you still feel it
+When the wind shifts direction.
+I stand now holding this piece of shiny trash,
+This foil that once pretended to be gold.
+I accept the silence after thunder.
+There is no grief in the object,
+Only in the hand that holds it.
+
+Nevertheless 
+I never truly lost you,
+Because perhaps I never truly had you.
+But I am still here.
+Still waiting without haste now.
+And for the first time,
+The night no longer frightens me.</div>
+  </div>
+
+  <footer>
+    <span class="footer-word">Him<span>Quantum</span></span>
+    <ul class="footer-links">
+      <li><a href="../essays.html">Essays</a></li>
+      <li><a href="../poems.html">Poems</a></li>
+      <li><a href="../about.html">About</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 HimQuantum · himquantum.com · All writing is original unless attributed.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+
+</body>
+</html>

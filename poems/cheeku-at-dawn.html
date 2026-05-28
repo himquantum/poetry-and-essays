@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cheeku, at dawn — HimQuantum</title>
+  <meta name="description" content="A poem by himquantum" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .poem-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .poem-text {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: var(--text);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .poem-header {
+      margin-bottom: 3rem;
+    }
+    .poem-header h1 {
+      font-size: 2.5rem;
+      margin: 0 0 0.5rem 0;
+      font-weight: 600;
+    }
+    .poem-meta {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--accent-color, #e74c3c);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .back-link:hover {
+      border-bottom-color: currentColor;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="wordmark">Him<span>Quantum</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../essays.html">Essays</a></li>
+      <li><a href="../poems.html">Poems</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../index.html#newsletter">Subscribe</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="poem-container">
+    <a href="../poems.html" class="back-link">← Back to all poems</a>
+    
+    <div class="poem-header">
+      <h1>Cheeku, at dawn</h1>
+      <div class="poem-meta">A poem by himquantum</div>
+    </div>
+
+    <div class="poem-text">[Poem content goes here]</div>
+  </div>
+
+  <footer>
+    <span class="footer-word">Him<span>Quantum</span></span>
+    <ul class="footer-links">
+      <li><a href="../essays.html">Essays</a></li>
+      <li><a href="../poems.html">Poems</a></li>
+      <li><a href="../about.html">About</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 HimQuantum · himquantum.com · All writing is original unless attributed.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+
+</body>
+</html>
