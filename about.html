@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — HimQuantum</title>
+  <meta name="description" content="About Himanshu — writer, reader, and thinker at the edge of philosophy and literature." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .about-grid {
+      display: grid;
+      grid-template-columns: 5fr 4fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .about-body p {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.85;
+      color: #2a2723;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-body p.lead {
+      font-size: 26px;
+      line-height: 1.5;
+      color: var(--ink);
+      margin-bottom: 2rem;
+    }
+
+    .about-sidebar { position: sticky; top: 5rem; }
+
+    .sidebar-block {
+      border-top: 0.5px solid var(--faint);
+      padding-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .sidebar-label {
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .influence-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .influence-list li {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      padding: 0.4rem 0;
+      border-bottom: 0.5px solid var(--faint);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .influence-list li span {
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      color: var(--faint);
+      font-family: var(--sans);
+      text-transform: uppercase;
+    }
+
+    .contact-line {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .contact-line a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 0.5px solid var(--accent);
+    }
+
+    .pull-quote {
+      font-family: var(--serif);
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.3;
+      color: var(--accent);
+      padding: 3rem 0;
+      border-top: 0.5px solid var(--faint);
+      border-bottom: 0.5px solid var(--faint);
+      margin: 3rem 0;
+    }
+
+    @media (max-width: 900px) {
+      .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .about-sidebar { position: static; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="wordmark">Him<span>Quantum</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="essays.html">Essays</a></li>
+      <li><a href="poems.html">Poems</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="index.html#newsletter">Subscribe</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="page-eyebrow fade-1">The writer</p>
+    <h1 class="page-heading fade-2">About<br><em>Himanshu</em></h1>
+  </div>
+
+  <section class="section">
+    <div class="about-grid">
+
+      <!-- MAIN TEXT -->
+      <div class="about-body">
+        <p class="lead">I write because thinking in silence is not enough, and talking is too fast for the things I want to say.</p>
+
+        <p>HimQuantum.com began as a private journal — a place to process ideas that didn't fit anywhere else. Philosophy half-remembered from borrowed books and forgotten bookmarks in browser. Observations too long for conversation. Poems drafted at midnight and revised over months. Eventually, it made more sense to open the door for the world than to keep writing for an audience of one.</p>
+
+        <p>My internet name himquantum is borrowed from physics. In quantum mechanics, particles don't move between states continuously — they leap. I believe, wisdom works similarly. It doesn't accumulate the way water fills a glass. It arrives discontinuously, in flashes, often after long silences. Sometimes, you think it's there, but it is not.(Heisenberg;) </p>
+
+        <div class="pull-quote">
+          "I am not interested in conclusions. I am interested in the quality of the attention brought to a question."
+        </div>
+
+        <p>My influences are unapologetically literary and philosophical. I admire Nietzsche for his relentlessness, Kafka for his precision, Dostoevsky for his faith in the complexity of the individual, Krishnamurti for his refusal of all authority including his own. I return to them not for answers but for the courage to keep asking.</p>
+
+        <p>Beyond the writing, I am a reader, a father, an engineer and someone who believes that the examined life — while not always comfortable — is the only one worth leading.</p>
+
+        <p>This site is updated when something is ready, not on a schedule. The newsletter goes out when there is something worth saying. If you are here, I imagine you understand the difference.</p>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="about-sidebar">
+
+        <div class="sidebar-block">
+          <p class="sidebar-label">Influences</p>
+          <ul class="influence-list">
+            <li>Friedrich Nietzsche <span>Philosophy</span></li>
+            <li>Franz Kafka <span>Literature</span></li>
+            <li>Fyodor Dostoevsky <span>Literature</span></li>
+            <li>J. Krishnamurti <span>Philosophy</span></li>
+            <li>Carl Jung <span>Psychology</span></li>
+            <li>George Orwell <span>Essays</span></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-block">
+          <p class="sidebar-label">This site</p>
+          <p class="contact-line">
+            Updated irregularly.<br>
+            No ads. No tracking.<br>
+            Just writing.
+          </p>
+        </div>
+
+        <div class="sidebar-block">
+          <p class="sidebar-label">Get in touch</p>
+          <p class="contact-line">
+            For correspondence, thoughts,<br>or a book recommendation —<br>
+            <a href="mailto:himquantum@gmail.com">himquantum@gmail.com</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-word">Him<span>Quantum</span></span>
+    <ul class="footer-links">
+      <li><a href="essays.html">Essays</a></li>
+      <li><a href="poems.html">Poems</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+   <p class="footer-copy" style="font-size: 130%;">© 2026 @HimQuantum · himquantum.com · All writing is original unless attributed.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+</body>
+</html>
