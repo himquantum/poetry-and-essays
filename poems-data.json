@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Paradox of All Knowledge",
+    "category": "Poem",
+    "featured": false,
+    "date": "May 28, 2026",
+    "url": "poems/the-paradox-of-all-knowledge.html",
+    "preview": "We built a library with infinite shelves\nand then we built walls inside it.\nThe algorithm learned our taste\nthe way a mirror learns your face,\nby reflecting it endlessly"
+  },
+  {
     "title": "The Alchemy of Waiting",
     "category": "Poem",
     "featured": false,

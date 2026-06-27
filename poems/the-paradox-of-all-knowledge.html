@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Paradox of All Knowledge — HimQuantum</title>
+  <meta name="description" content="A poem about confirmation bias, echo chambers, and the paradox of information abundance." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .poem-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .poem-text {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: var(--text);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .poem-header {
+      margin-bottom: 3rem;
+    }
+    .poem-header h1 {
+      font-size: 2.5rem;
+      margin: 0 0 0.5rem 0;
+      font-weight: 600;
+    }
+    .poem-meta {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: var(--accent-color, #e74c3c);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .back-link:hover {
+      border-bottom-color: currentColor;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="wordmark">Him<span>Quantum</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../essays.html">Essays</a></li>
+      <li><a href="../poems.html">Poems</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../index.html#newsletter">Subscribe</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="poem-container">
+    <a href="../poems.html" class="back-link">← Back to all poems</a>
+    
+    <div class="poem-header">
+      <h1>The Paradox of All Knowledge</h1>
+      <div class="poem-meta">A poem by himquantum</div>
+    </div>
+
+    <div class="poem-text">We built a library with infinite shelves
+and then we built walls inside it.
+
+The algorithm learned our taste
+the way a mirror learns your face,
+by reflecting it endlessly
+until you forget there's a world behind the glass.
+
+A click away: every fact ever documented,
+every perspective ever written,
+the collected wisdom of millennia
+sitting in your pocket like a gem
+you refuse to touch.
+
+Instead you adore the same pebble daily,
+polished smooth by repetition,
+comforted by its familiar weight.
+
+I watch people hold the world in their hands
+and choose to see only their corner of it.
+The search bar glows with infinite possibility
+and they don't dare to type a few words.
+
+This is the cruelest trick
+the information age ever played:
+it gave us a planet
+and we chose the smallest cave.
+We called it freedom.
+We built algorithmic prisons
+with open doors
+and never noticed
+we locked ourselves in.
+
+Confirmation bias is not stupidity.
+It is the mind's way of saying:
+I am afraid of being wrong.
+Let me rest in the familiar.
+Let me surround myself with voices
+that sing my song back to me.
+
+The echo chamber does not silence the world.
+It just makes your own voice so loud
+you cannot hear anything else.
+
+And the tragedy is this:
+We have never been more informed.
+We have never been more certain.
+We have never understood less.
+
+The paradox is not that information exists.
+The paradox is that abundance has become a prison.
+We are drowning in data
+and parched for truth.
+
+We mistake popularity for validity.
+We mistake the loudness of our bubble
+for the sound of reality.
+A familiar actor says something about history,
+A familiar player teaches biology,
+and we call it proof.
+
+not realizing we've only travelled in circles.
+
+The world is wider than your feed.
+Truth is stranger than your algorithm.
+Reality refuses to be personalized.
+
+But you will not know this
+until you leave the room.
+Until you unmute the voices
+that make you uncomfortable.
+Until you search for what you're afraid to find.
+
+And most of us will not.
+Most of us will die
+in the cave we chose
+surrounded by mirrors,
+convincing ourselves
+we are looking out the window.</div>
+  </div>
+
+  <footer>
+    <span class="footer-word">Him<span>Quantum</span></span>
+    <ul class="footer-links">
+      <li><a href="../essays.html">Essays</a></li>
+      <li><a href="../poems.html">Poems</a></li>
+      <li><a href="../about.html">About</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 HimQuantum · himquantum.com · All writing is original unless attributed.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+
+</body>
+</html>
