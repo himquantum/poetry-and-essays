@@ -1,5 +1,13 @@
 [
   {
+    "title": "Meet me there",
+    "category": "Poem",
+    "featured": false,
+    "date": "July 30, 2026",
+    "url": "poems/meet-me-there.html",
+    "preview": "Not here, where words are made\nfor weather and for small talks\nwhere we ask how are you and never mean it\nand answer fine — Means nothing\n\nMeet me there -\npast the small talk and the careful smiles,\npast the version of myself\nI keep presentable for society"
+  },
+  {
     "title": "The Paradox of All Knowledge",
     "category": "Poem",
     "featured": false,
