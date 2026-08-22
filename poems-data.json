@@ -1,5 +1,13 @@
 [
   {
+    "title": "O Autumn",
+    "category": "Poem",
+    "featured": false,
+    "date": "August 22, 2026",
+    "url": "poems/o-autumn.html",
+    "preview": "In autumn's tender, humble fall,\nA quiet grandeur cloaks it all.\nLeaves in gold and crimson blaze,\nAwakening hearts in a fleeting haze.\n\nNo sorrow in fall, they drift, they lift,"
+  },
+  {
     "title": "Meet me there",
     "category": "Poem",
     "featured": false,
