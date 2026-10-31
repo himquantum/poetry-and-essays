@@ -1,5 +1,13 @@
 [
   {
+    "title": "Under the Wide Blue Sky",
+    "category": "Poem",
+    "featured": false,
+    "date": "October 31, 2026",
+    "url": "poems/under-the-wide-blue-sky.html",
+    "preview": "There is a quiet that arrives\nwhen the morning stretches wide,\nand the sky, that patient blue,\nwears its clouds like scattered thoughts\nthat never quite decide to land."
+  },
+  {
     "title": "O Autumn",
     "category": "Poem",
     "featured": false,
